@@ -1,0 +1,15 @@
+==Read Me==
+
+Website ban hang CaseStudy1 voi cac chuc nang:
+
+1. User:
+ -> Hien thi san pham
+ -> Tim kiem san pham
+ -> Đang nhap admin, gio hang, trang nguoi dung
+
+2. Admin bao gom cac chuc nang
+ -> Danh sach san pham, tim kiem, them, sua, xoa san pham
+
+Admin Account:
+ + username: admin
+ + password: 12345

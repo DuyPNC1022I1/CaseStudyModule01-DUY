@@ -1,0 +1,401 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.allBody {
+    font-family: 'Open Sans', sans-serif;
+}
+/*Header*/
+/*Header logo + thanh tìm kiếm */
+.SEARCH {
+    /*Chuyển các phẩn tử trong cùng 1 div thành ngang dòng*/
+    display:inline-flex;
+}
+.SEARCH img{
+    height: 80px;
+    width: 150px;
+    padding-left: 220px;
+    padding-right: 80px;
+    padding-top: 10px;
+}
+.SEARCH__box{
+    padding-top: 30px;
+}
+.search{
+    width: 600px;
+    height: 40px;
+    border-radius: 1rem;
+    color: inherit;
+    font: inherit;
+}
+.searchbutton {
+    width: 100px;
+    height: 40px;
+    border-radius: 1rem;
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+    background: #222;
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+}
+.searchbutton:hover {
+    background: #f00;
+}
+.searchbutton:active {
+    background: #f00;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+.header{
+    padding-top: 30px;
+    padding-left: 250px;
+}
+.header a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.header a:hover {
+    background: #f00;
+}
+/*Phần hiển thị menu*/
+.menu{
+    padding-top: 0px;
+    width: 700px;
+    height: 30px;
+    margin: 0px auto;
+    padding-bottom: 50px;
+
+}
+.menu__ul{
+    list-style-type: none;
+    text-align: center;
+}
+.menu__li{
+    /*sắp xếp ul dọc -> ngang*/
+    display: inline-table;;
+    background-color: white;
+    width: 120px;
+    height: 50px;
+    line-height: 70px;
+    position: relative;
+}
+.menu__a{
+    text-decoration: none;
+    /*Thẻ a chứa toàn bộ vùng div menu*/
+    display: block;
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+}
+.menu__a:hover{
+    background: orange;
+    color: red;
+}
+.menu__li__ul{
+    width: 250px;
+    min-height: 120px;
+    position: absolute;
+    padding: 15px 0px;
+    list-style: none;
+    display: none;
+}
+.menu__li__li {
+    list-style: none;
+    padding: 8px 15px;
+    display: block;
+    line-height: 30px;
+}
+
+
+/*Phần hiển thị Form đăng ký*/
+.Dangky {
+    /*Phần Dangky phủ hết màn hình*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+.Dangky__overlay {
+    /*Cho biet la tap con cua Dangky, phần phông nền mờ của form đăng ký*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.Dangky__body {
+    background-color: white;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    width: 500px;
+    height: 200px;
+}
+.Dangnhap__body {
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    margin: auto;
+    z-index: 2;
+}
+.Dangky__inner-Body {
+    padding: 0 32px;
+}
+.form-dangky__header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    cursor: pointer;
+}
+.form-dangky__dangky {
+    font-size: 2rem;
+    padding-left: 140px;
+    padding-top: 20px;
+}
+.form-dangky__clickchange {
+    font-size: 1.8rem;
+    color: red;
+}
+.form-nhapthongtin__nhapuser {
+    width: 100%;
+    height: 20px;
+}
+.form-nhapthongtin__nhappassword {
+    width: 100%;
+    height: 20px;
+}
+.form-nhapthongtin {
+    margin-top: 10px;
+}
+.Dangky__button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 310px;
+}
+.btn.btn-primary {
+    color: white;
+    background-color: red;
+}
+
+/*Phần body*/
+/*Phần body hiển thị sản phẩm*/
+.body{
+    max-width: 1170px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.15;
+}
+.Body__item {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+/*Phần hiển thị sản phẩm*/
+.sanpham{
+    /*!* Sắp xếp list thành 1 dòng *!*!*/
+    display:inline-flex;
+    background:white;
+    /*!*Cho xuống hàng nếu list trên 1 dòng quá dài*!*!*/
+    flex-wrap: wrap;
+    /*!*Giảm khung hiển thị hàng ngang*!*!*/
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 1px;
+
+}
+.sanpham__thongtin{
+    padding:10px;
+    border:2px solid #999;
+    margin:15px;
+    flex-basis: 10%;
+    border-radius: 1rem;
+    padding-left: 1px;
+    padding-right: 1px;
+    box-sizing: border-box;
+}
+.sanpham__hinhanh img{
+    height: 250px;
+    width: 250px;
+    position: relative;
+}
+.sanpham__ten{
+    display: block;
+    text-decoration:none;
+    text-align: center;
+}
+.sanpham__gia{
+    text-align: center;
+    font-weight: 600;
+
+}
+.sanpham__mua {
+    text-align: center;
+    font-size: 2rem;
+}
+.sanpham__mua button{
+    background: orange;
+    border: 0.2px solid orange;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.sanpham__mua button:hover {
+    background: #f00;
+}
+
+/*Phần footer*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/*Footer Thiết Lập Cho Thành Phần Nội Dung Giới Thiệu*/
+footer .container .noi-dung{
+    margin-right: 30px;
+}
+footer  .container .noi-dung.about{
+    width:40%;
+}
+footer .container .noi-dung.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container .noi-dung.about h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer .container .noi-dung.about p{
+    color: #999;
+}
+.contact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin-top:16px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+.btn--primary {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 8px 24px;
+}
+.btn--primary:hover {
+    background: #f00;
+}
+.btn--primary:active {
+    background: #f00;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+.form__field {
+    width: 90%;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    border: 0;
+    outline: 0;
+    padding: 8px 4px;
+}
+
+/*Footer phần đường dẫn*/
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.links{
+    position: relative;
+    width: 25%;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.links ul li a:hover{
+    color: #fff;
+}
