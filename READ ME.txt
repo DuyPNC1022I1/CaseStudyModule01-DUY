@@ -2,14 +2,18 @@
 
 Website ban hang CaseStudy1 voi cac chuc nang:
 
-1. User:
- -> Hien thi san pham
- -> Tim kiem san pham
- -> Đang nhap admin, gio hang, trang nguoi dung
+1. Che do User:
+  --> Hien thi san pham
+  --> Mua hang
 
-2. Admin bao gom cac chuc nang
- -> Danh sach san pham, tim kiem, them, sua, xoa san pham
+2. Chuc nang login dang nhap admin
 
+3. Che do Admin:
+ -> Them san pham
+ -> Sua san pham
+ -> Xoa san pham
+
+//Note: 
 Admin Account:
  + username: admin
- + password: 12345
+ + password: 123
